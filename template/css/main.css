@@ -1,0 +1,1483 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Cambria;
+}
+
+li{
+    list-style: none;
+}
+
+.first {
+    width: 100%;
+    height: 50px;
+    background-color: #2F2F2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first .mobile-menu{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.first a {
+    color: white;
+}
+
+.faculty {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.faculty a:first-child:hover{
+    transition: 0.2s;
+    color: darkgrey;
+}
+
+
+.active-one{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.inactive,.door{
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.faculty #inner{
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faculty #inner:hover{
+    color: darkcyan;
+    transition: 0.2s;
+}
+
+.hide{
+    text-align: center;
+    position:absolute;
+    right: 35px;
+    top: 50px;
+    display:none;
+    z-index:10;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+
+.door a:nth-child(2) > span{
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    transition: 0.2s;
+    transform: rotate(-90deg);
+}
+
+
+.active-one a:nth-child(2) > span{
+    color: darkcyan;
+    transition: 0.2s;
+    transform: rotate(90deg);
+}
+
+.door a:nth-child(2){
+    color: white;
+    transition: 0.2s;
+    width: 130px;
+}
+
+.active-one a:nth-child(2){
+    transition: 0.2s;
+    color: darkcyan;
+}
+
+
+
+
+.hide>li{
+    cursor:pointer;
+    background-color: black;
+    width: 144px;
+    display: block;
+    height: 45px;
+    border-bottom: 1px solid white;
+}
+
+.hide>li>a{
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.door:hover
+{
+    cursor:pointer;
+}
+
+.active-one>.hide>li>a:hover{
+    color: darkcyan;
+}
+
+.js{
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    z-index:9;
+    display:none;
+    background:transparent;
+}
+
+
+
+
+
+
+.main-menu {
+    height: 140px;
+}
+
+.main-menu .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-menu .menu li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 140px;
+    width: calc(100vw / 6);
+}
+
+.main-menu .menu li:nth-child(2){
+    justify-content: center;
+}
+
+
+.main-menu .menu li a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    color: black;
+}
+
+.main-menu>.menu>li:nth-child(2)>a{
+    width: 55%;
+}
+
+.main-menu .menu li a:hover{
+    color: white;
+    opacity: 0.9;
+    background-color: #23282D;
+}
+
+.main-menu .menu li a #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid red;
+    border-right: 100px solid transparent;
+}
+
+
+
+.main-menu .menu li:nth-child(3){
+    position: relative;
+    z-index: 100;
+}
+
+.main-menu .menu li:nth-child(2) a:hover{
+    color: darkcyan;
+    background-color: white;
+}
+
+#events:hover{
+    color: darkcyan;
+    background-color: white;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.main-menu .menu li:nth-child(3) a:hover{
+    background-color: white;
+    opacity: 0.8;
+}
+
+
+.main-menu .menu .sub_menu{
+    display: none;
+}
+
+
+.main-menu .menu .active-two {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 150px;
+    background-color: #23282D;
+    opacity: 0.8;
+    color: white;
+    width: calc(75vw / 6);
+}
+
+.main-menu .menu .active-two li{
+    font-size: 0.9em;
+    height: 35px;
+    width: 100%;
+    background-color: #2F2F2F;
+}
+
+.main-menu .menu .active-two li a {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.main-menu .menu li span{
+    cursor: pointer;
+    font-size: 1.3em;
+    color: black;
+    transform: scale(1.0);
+    transition: 0.2s;
+}
+
+.main-menu .active-three #events{
+    transition: 0.2s;
+    color: darkcyan;
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.main-menu .menu .sub_menu li a:hover {
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    background-color: #e0e0e2;
+    box-shadow: inset 0 7px 30px 0 #2f2f2f;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: calc(100vh - 230px);
+}
+
+
+
+.container main h1{
+    text-align: center
+}
+
+.container .about{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 1200px;
+}
+
+.container .about h1{
+    align-self: center;
+}
+
+
+.container .about .icons{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container .about .static_information{
+    font-size: 26px;
+}
+
+.container .about .icons img{
+    width: 100px;
+}
+
+.container .about .first_item{
+    margin-right: 40px;
+    float: left;
+}
+
+.container .about .second_item{
+    float: left;
+}
+
+.container .about .icons h2{
+    margin-top: 50px;
+    text-align:center;
+}
+
+.container .about .icons .first_item img{
+    margin: 20px 0 20px 20px;
+}
+
+.container .about .icons .second_item img{
+    margin: 20px 0 20px 100px;
+}
+
+.container .about .icons .third_item img{
+    margin: 20px 0 20px 120px;
+}
+
+.container .about a{
+    font-size: 25px;
+    margin: 30px 50px 30px 0;
+    text-align: right;
+}
+
+.container .app{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.container .static_information_1{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.container .feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .feedback form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.container .feedback h1{
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.container .feedback p{
+    font-size: 22px;
+}
+
+.container .feedback form label{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.container .feedback form input{
+    min-height: 40px;
+}
+
+.container .feedback form input:focus{
+    background-color: lightgoldenrodyellow;
+}
+
+.container .feedback form input:last-child{
+    height: 50px;
+    width: 250px;
+    max-width: 100px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 100px;
+}
+
+.container .feedback form input:last-child:hover{
+    transition: 0.7s;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.container .feedback .span{
+    text-align: center;
+    margin-bottom:50px
+}
+
+.container main .empty{
+    width: 1000px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.container .login-form form {
+    margin: 20px 0 20px 0;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+}
+
+.container .login-form form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .login-form form label{
+    align-self: flex-start;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.container .login-form form input{
+    min-height: 35px;
+    width: 300px;
+}
+
+.container .login-form form .header_form{
+    background-color: #B5B5B6;
+    width: 100%;
+}
+
+.container .login-form form #button{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    min-height: 35px;
+    width: 100px;
+}
+
+.container .login-form form #button2{
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    min-height: 35px;
+    width: 60%;
+}
+
+.container .login-form form #button3{
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    min-height: 35px;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.container .login-form form #button:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.container .login-form form #button2:hover{
+    transition: 0.5s;
+    background-color: #B5B5B6;
+
+}
+
+.container .login-form form #button3:hover{
+    transition: 0.5s;
+    background-color: #B5B5B6;
+
+}
+
+
+.container .login-form form input:focus{
+    background-color: lightgoldenrodyellow;
+}
+
+.container .login-form form .auth{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+
+.container .login-form form .auth input{
+    width: auto;
+}
+
+.container .login-form form .auth label{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.container .login-form form .auth label input{
+    margin-left: 5px;
+}
+
+
+.container .reg-form form {
+    margin: 20px 0 20px 0;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    min-width: 500px;
+}
+
+.container .reg-form form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .reg-form form label{
+    align-self: flex-start;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.container .reg-form form input{
+    min-height: 35px;
+    width: 300px;
+}
+
+.container .reg-form form .header_form{
+    background-color: #B5B5B6;
+    width: 100%;
+}
+
+.container .reg-form form #button{
+    background-color: black;
+    color: white;
+    min-height: 35px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container .reg-form form #button:hover{
+    transition: 0.5s;
+    background-color: #B5B5B6;
+    color: black;
+}
+
+.container .reg-form form input:focus{
+    background-color: lightgoldenrodyellow;
+}
+
+.container .edit-form form {
+    margin: 20px 0 20px 0;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 500px;
+}
+
+.container .edit-form form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .edit-form form label{
+    align-self: flex-start;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.container .edit-form form input{
+    min-height: 35px;
+    width: 300px;
+}
+
+.container .edit-form form #line{
+    margin-top: 20px;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.container .edit-form form .header_form{
+    background-color: #B5B5B6;
+    width: 100%;
+}
+
+.container .edit-form form #button{
+    background-color: black;
+    color: white;
+    min-height: 35px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container .edit-form form #button:hover{
+    transition: 0.5s;
+    background-color: #B5B5B6;
+    color: black;
+}
+
+.container .edit-form form input:focus{
+    background-color: lightgoldenrodyellow;
+}
+
+.container .cabinet{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.container .cabinet form {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 500px;
+}
+
+.container .cabinet form input{
+    margin-bottom: 15px;
+    min-height: 60px;
+    width: 100%;
+
+}
+
+.container .cabinet form input:hover{
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    transition: 0.5s;
+}
+
+.container .event_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.container .event_item h1{
+    font-size: 35px;
+}
+
+.container .event_item p:nth-child(2){
+    text-align: center;
+    font-size: 20px;
+}
+
+.container .event_item hr{
+    margin-top: 7px;
+    height: 1px;
+    background-color: black;
+    width: 400px;
+}
+
+.container .event_item img{
+    max-width: 400px;
+    float: left;
+    margin-right: 1%;
+}
+
+.container .event_item div{
+    margin: 7px 0 7px 0;
+}
+
+.container .event_item p:nth-child(5){
+    align-self: flex-start;
+    font-size: 20px;
+    color: lightseagreen;
+    margin: 7px 0 7px 0;
+}
+.container .event_item p:nth-child(6){
+    align-self: flex-start;
+    font-size: 24px;
+    margin: 7px 0 7px 0;
+    color: lightseagreen;
+}
+
+.container .event_item input{
+    height: 50px;
+    min-width: 200px;
+    margin: 60px 0 60px 0;
+    border-bottom: 2px solid black;
+}
+
+.container .event_item input:hover{
+    border: none;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.container .event_item #button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    height: 50px;
+    border: 3px solid black;
+    color: red;
+    margin: 50px 0 50px 0;
+}
+
+
+.container .delete_account form {
+    margin-top: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+   width: 500px;
+}
+
+.container .delete_account form .header_form{
+    margin: 0;
+    background-color: #B5B5B6;
+    width: 100%;
+    text-align: center;
+}
+
+
+.container .delete_account form label{
+    margin: 7px 0 7px 0;
+    font-size: 18px;
+}
+
+.container .delete_account form input{
+    min-height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.container .delete_account form input:nth-child(1),.container .delete_account form input:nth-child(2){
+    min-height: 40px;
+    width: 200px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.container .delete_account form input:nth-child(1){
+    background-color: lightgreen;
+}
+
+.container .delete_account form input:nth-child(2){
+    background-color: red;
+}
+
+.container .delete_account form input:nth-child(1):hover{
+    border: none;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.container .delete_account form input:nth-child(2):hover{
+    border: none;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+
+
+.container .admin-main form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 290px;
+    min-width: 500px;
+}
+
+
+
+.container .admin-main form input{
+    margin-top: 50px;
+    height: 50px;
+    margin-right: 2%;
+    width: 250px;
+    background-color: darkcyan;
+    border: 1px solid black;
+    color: white;
+}
+
+.container .admin-main form input:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+
+
+.container .admin-main h1{
+    margin-top: 55px;
+    text-align: center;
+}
+
+
+
+.container .add_event{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    width: 800px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.container .add_event a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: darkcyan;
+}
+
+.container .add_event span{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.container .table{
+    width: 800px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+.container .table tr th{
+   font-size: 20px
+}
+
+.container .table tr td a img, .container .add_event a img{
+    width: 20px;
+}
+
+.container .table .head_table th{
+    border: 1px solid black;
+}
+
+.container .table td{
+    text-align: center;
+}
+
+.container .add_event input{
+    background-color: darkcyan;
+    border: 1px solid black;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+.container .add_event input:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+
+
+.container .header_manager_user{
+    margin: 30px 0 30px 0;
+    height: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header_manager_user input{
+    background-color: darkcyan;
+    border: 1px solid black;
+    color: white;
+    height: 30px;
+    width: 100px;
+}
+
+.container .header_manager_user input:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+
+.container .header_manager_user input:nth-child(2){
+    background-color: white;
+    border: 1px solid black;
+    color: white;
+    height: 30px;
+    width: 200px;
+}
+
+.container .header_manager_user input:nth-child(2):focus{
+    transition: 0.0001s;
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+aside {
+    margin-left: 10px;
+    background-color: #efefef;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    max-height: 800px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+aside ul, aside h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    color: white;
+    background-color: #4C5054;
+    font-size: 18pt;
+}
+
+aside ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    min-width: 248px;
+}
+
+aside ul li:hover,aside ul li:hover a{
+    text-align: center;
+    min-width: 248px;
+    background-color: #B5B5B6;
+}
+
+aside ul li a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    height: 100%;
+    font-size: 16pt;
+}
+
+aside ul li .active{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    min-width: 248px;
+    background-color: #B5B5B6;;
+}
+
+
+
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #efefef;
+    width: 1000px;
+    min-height: 200px;
+    border: 1px solid black;
+    padding: 20px 20px 20px 10px;
+
+}
+
+
+
+
+article img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+
+article a {
+    float: right;
+    font-size: 14pt;
+    margin-top: -5px;
+    align-self: center;
+    color: blue;
+}
+
+article a:hover {
+    transition: 0.2s;
+    color: darkcyan;
+}
+
+article:first-child{
+    margin-top: 50px;
+}
+
+article:last-child{
+    margin-bottom: 50px;
+}
+
+.pagination {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagination ul li{
+    display: inline-block;
+    padding: 70px 0 40px 15px;
+    font-size: 22px;
+}
+
+.pagination ul li a{
+    color: black;
+}
+
+
+.active a{
+   text-decoration: underline;
+}
+
+.pagination ul li a:hover{
+    background-color: #23282D ;
+    opacity: 0.8;
+    color: white;
+}
+
+footer{
+    height: 40px;
+    background-color: #2F2F2F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer p{
+    color: white;
+}
+
+footer .footer-nav ul li{
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 5px;
+}
+
+footer .footer-nav ul li a{
+    color: white;
+}
+
+footer .footer-nav ul li a:hover{
+    color: darkcyan;
+}
+
+@media (max-width: 1650px){
+    .main-menu>.menu>li:nth-child(2)>a{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1300px){
+    article{
+        width: 600px;
+    }
+    .container main .empty{
+        width: 750px;
+    }
+    .main-menu>.menu>li:nth-child(2)>a{
+        width: 90%;
+    }
+}
+
+
+
+
+@media (max-width: 1050px){
+
+    .container .admin-main form{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 300px;
+    }
+
+    .container .admin-main form input{
+        margin-top: 15px;
+        height: 50px;
+        width: 250px;
+    }
+
+    .main-menu .menu .active-two{
+
+        left: 195px;
+    }
+
+    .main-menu .menu .sub_menu li{
+
+        width: calc(100vw / 5);
+    }
+
+    .main-menu .menu .sub_menu li a {
+
+        width: calc(100vw / 5);
+    }
+
+    .main-menu .admin-main form input{
+        margin-top: 3vh;
+        height: 40px;
+        width: 250px;
+    }
+
+    .main-menu .menu li{
+        width: calc(100vw / 5);
+    }
+
+    .main-menu .menu li:nth-child(3){
+        display: none;
+    }
+
+    .main-menu .menu .sub_menu li:nth-child(3){
+        display: block;
+    }
+
+    .main-menu .menu .active-two li {
+        margin: 0;
+        min-width: 150px;
+    }
+
+    .container main .empty{
+        width: 500px;
+    }
+
+    .sub_menu{
+        width: 100px;
+    }
+
+    .main-menu>.menu>li:nth-child(2)>a{
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 900px){
+    article{
+        width: 680px;
+    }
+    .container main .empty{
+        width: 500px;
+    }
+
+    .container{
+        min-height: calc(100vh - 40px);
+    }
+
+    .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .first .login,.first .door{
+        display: none;
+    }
+    .first{
+        position: fixed;
+        z-index: 10000;
+    }
+    .main-menu,.first>.faculty>#inner{
+        display: none;
+    }
+    .first .mobile-menu{
+        display: block;
+    }
+    .first .mobile-menu .btn-menu img:nth-child(2){
+        display: none;
+    }
+    .first .mobile-menu .hidden-menu li a{
+        font-size: 1.4em;
+    }
+    .first .mobile-menu .hidden-menu li {
+        margin-top: 15px;
+    }
+    .first .mobile-menu .hidden-menu {
+        display: block;
+        position: fixed;
+        list-style:none;
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 200px;
+        background-color: black;
+        opacity: 0.8;
+        height: 100%;
+        top: 0;
+        right: -200px;
+        transition: left .2s;
+        z-index: 3;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    .hidden-menu-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index:  2;
+        background-color: black;
+        opacity: 0.3;
+    }
+    .hidden-menu-ticker {
+        display: none;
+    }
+    .btn-menu {
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        cursor: pointer;
+        transition: right .23s;
+        z-index: 3;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    .hidden-menu-wrapper {
+        width: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+
+
+    .hidden-menu-ticker:checked ~ .btn-menu {
+        right: 0;
+        position: fixed;
+    }
+    .hidden-menu-ticker:checked ~ .hidden-menu-wrapper {
+        width: 100%;
+    }
+    .hidden-menu-ticker:checked ~ .hidden-menu-wrapper .hidden-menu {
+        right: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu img:nth-child(1) {
+         display: none;
+     }
+    .hidden-menu-ticker:checked ~ .btn-menu img:nth-child(2) {
+        display: block;
+    }
+    .hidden-menu-ticker:checked ~ .hidden-menu {
+        right: 0;
+    }
+
+    .first .mobile-menu{
+        margin-right: 30px;
+    }
+
+
+    aside{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+
+    article{
+        width: 435px;
+    }
+
+    .feedback {
+        width: 400px;
+    }
+    .feedback form {
+        max-width: 400px;
+    }
+
+    .container .login-form form{
+        width: 300px;
+    }
+
+    #remember_label{
+        display: none;
+    }
+
+    .container .login-form form .auth{
+        justify-content: space-around;
+    }
+
+    .container .login-form form #button{
+        width: 400px;
+    }
+
+    .container .login-form form input{
+        width: 200px;
+    }
+
+
+}
+
+@media (max-width: 560px){
+    article{
+        width: 350px;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer nav ul{
+        display: none;
+    }
+    .container .cabinet, .container .cabinet form {
+        width: 300px;
+    }
+
+    .container .edit-form form {
+        justify-content: space-around;
+        width: 250px;
+    }
+
+    .container .edit-form form input{
+        width: 220px;
+    }
+
+
+}
+
+@media (max-width: 450px){
+
+
+    aside{
+        display: none;
+    }
+    article{
+        width: calc(100vw - 20px);
+    }
+    .feedback {
+        width: 300px;
+    }
+    .feedback form {
+        max-width: 250px;
+    }
+
+    .container .cabinet form input {
+        width: 70%;
+    }
+
+    .container .login-form form{
+        width: 230px;
+    }
+
+    .container .login-form form .auth{
+        justify-content: space-around;
+    }
+
+    .container .login-form form #button{
+        width: 170px;
+    }
+
+    .container .login-form form input{
+        width: 170px;
+    }
+
+
+    .container .delete_account form {
+        justify-content: space-around;
+        width: 300px;
+    }
+
+    .container .delete_account form .header_form{
+        background-color: #B5B5B6;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .delete_account form input{
+        width: 220px;
+    }
+
+    .container .delete_account form input:nth-child(1),.container .delete_account form input:nth-child(2){
+        width: 140px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
