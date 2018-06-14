@@ -17,7 +17,7 @@
         }
 
 
-        //Вывод всех новостей всех категорий
+        //Вывод всех новостей всех категорий/
         public function actionEventList($page = 1)
         {
             $eventsList = array();
